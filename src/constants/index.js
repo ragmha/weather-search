@@ -4,4 +4,4 @@ const FETCH_WEATHER = "FETCH_WEATHER";
 
 const ROOT_URL = `http://samples.openweathermap.org/data/2.5/forecast?&appid=${APIKEY}`;
 
-export { API_KEY, FETCH_WEATHER };
+export { API_KEY, ROOT_URL, FETCH_WEATHER };
