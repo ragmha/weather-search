@@ -1,1 +1,14 @@
-const API_KEY = "55731a29a05ead0f8d69b0cf66774cf9";
+import axios from "axios";
+
+import { API_KEY, ROOT_URL, FETCH_WEATHER } from "../constants";
+
+export function fetchWeather(city) {
+  const url = `${ROOT_URL}&q=${city},us`; // us is country code [Change Later]
+
+  const request = axios.get(url); // returns a Promise :D
+
+  return {
+    type: FETCH_WEATHER,
+    payload: request
+  };
+}
